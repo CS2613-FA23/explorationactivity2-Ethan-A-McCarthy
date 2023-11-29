@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethan McCarthy Exploration Activity 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h2>Graph Creator</h2>
+    <div>
+        <label for="Chart Title">Chart Title: </label>
+        <input type="text" id="chartTitle">
+    </div>
+    <div>
+        <label for="chartType">Chart Type: </label>
+        <select id="chartType" onchange="updateChartType()">
+            <option value="scatter">Scatter Plot</option>
+            <option value="bar">Bar Chart</option>
+            <option value="line">Line Graph</option>
+            <option value="pie">Pie Chart</option>
+        </select>
+    </div>
+    <div id="xLabel" style="display: none;">
+        <label for="xAxisLabel">X-axis Label: </label>
+        <input type="text" id="xAxisLabel">
+    </div>
+    <div id="yLabel" style="display: none;">
+        <label for="yAxisLabel">Y-axis Label: </label>
+        <input type="text" id="yAxisLabel">
+    </div>
+    <div id="labelsInputDiv" style="display: none;">
+        <label for="labelsInput">Enter labels and Data (comma-separated): </label>
+        <input type="text" id="labelsInput" placeholder="e.g., Label1,1 Label2,2 Label3,3">
+    </div>
+    <div id="dataInputDiv" style="display: none;">
+        <label for="dataInput">Enter data (comma-separated): </label>
+        <input type="text" id="dataInput" placeholder="e.g., 50,7 60,8 70,8">
+    </div>
+    <div>
+        <button onclick="generateChart()">Generate Chart</button>
+    </div>
+    <div id="myChartDiv" style="width: 600px; height: 600px">
+        <canvas id="myChart" ></canvas>
+    </div>
+    
+    <script src="chartJS.js"></script>
+</body>
+</html>
