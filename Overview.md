@@ -5,7 +5,7 @@ Chartjs is a data representation package that can show data in many different wa
 ### What purpose does it serve?
 Its purpose is to visualize data in different ways and show it in clear and nice ways.
 ### How do you use it?
-
+To use it you have install it by putting npm install chart.js into your node.js terminal. Then you have access to all of the different charts that can be used to represent data via an object called a "canvas" which can be modified to suit the different types of graphs and charts. Chartjs also has many plugins that can be used for many different specific things, and they are very easy to implement into the code. Chartjs also has built in text editing so you can design and change your chart however you want, there are many different styles and ways to modify them so there is a lot of customization with chartjs.
 
 ## 3 What are the functionalities of the package?
 
